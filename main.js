@@ -138,11 +138,12 @@ class Ant {
         }
     }
     run(timestamp) {
+        var framePerSecond = 60;
         setTimeout(() => {
             requestAnimationFrame(this.run.bind(this));
             this.move();
             console.log(timestamp);
-        }, 1000 / 20);
+        }, 1000 / framePerSecond);
     }
 }
 
