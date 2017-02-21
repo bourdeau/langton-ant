@@ -137,11 +137,12 @@ class Ant {
             }
         }
     }
-    run(speed = 100) {
+    run(timestamp) {
         setTimeout(() => {
             requestAnimationFrame(this.run.bind(this));
             this.move();
-        }, 1000 / speed);
+            console.log(timestamp);
+        }, 1000 / 20);
     }
 }
 
@@ -157,5 +158,5 @@ function start() {
 
     ant.createGrid(gridColor);
     ant.setAntInitPosition();
-    ant.run(2000);
+    ant.run();
 }
