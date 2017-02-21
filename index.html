@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="counter">
+        Number of moves: <div id="count">0</div>
+        <select name="grid-type" id="grid-type">
+            <option value="white">White</option>
+            <option value="black">Black</option>
+            <option value="random">random</option>
+        </select>
+        <button onclick="start()" type="button">Start</button>
+    </div>
+    <div id="grid-container"></div>
+    <script src="main.js"></script>
+  </body>
+</html>
